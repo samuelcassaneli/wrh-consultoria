@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6a0dad, #c83793, #e9497f);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alterado para flex-start para permitir rolagem */
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px; /* Adicionado margem no topo */
+    margin-bottom: 20px; /* Adicionado margem na base */
+}
+
+.card-header {
+    background: linear-gradient(to right, #3A1C71, #D76D77, #FFAF7B); /* Um gradiente inspirado, mas mais suave */
+    background-image: url('./background_image.jpg'); /* Use a imagem original como fundo se desejar */
+    background-size: cover;
+    background-position: center;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative; /* Para o logo */
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    margin-bottom: 15px; /* Espaço entre a foto e o logo */
+}
+
+.logo-container {
+    margin-top: 10px;
+}
+
+.logo {
+    max-width: 200px; /* Ajuste conforme o tamanho do seu logo */
+    height: auto;
+}
+
+/* Estilo para logo em texto (se usar a Opção 2 do HTML) */
+.logo-text {
+    color: #fff;
+    text-align: center;
+}
+.main-logo-char {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+.sub-logo-char {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #ffffff;
+    vertical-align: super;
+    margin-left: -5px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+.logo-name {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: -10px; /* Ajuste para ficar mais próximo do W rh */
+    letter-spacing: 1px;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+
+.card-body {
+    padding: 25px 30px;
+}
+
+.card-body h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #3A1C71; /* Roxo escuro */
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card-body .title {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #c83793; /* Rosa/Magenta */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bio {
+    margin-bottom: 25px;
+    text-align: justify;
+    font-size: 0.95em;
+    line-height: 1.6;
+}
+
+.bio p {
+    margin-bottom: 10px;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Espaçamento entre os links de contato */
+    margin-bottom: 25px;
+}
+
+.contact-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 0.95em;
+    display: inline-flex; /* Para alinhar ícone e texto */
+    align-items: center; /* Alinha ícone e texto verticalmente */
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #f0f0f0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: #6a0dad; /* Roxo do gradiente */
+    color: #fff;
+}
+
+.contact-link i {
+    margin-right: 10px;
+    font-size: 1.2em;
+    width: 20px; /* Largura fixa para o ícone */
+    text-align: center; /* Centraliza o ícone */
+}
+
+/* Cores específicas para ícones no hover para destaque */
+.contact-link:hover .fa-instagram { color: #E1306C; }
+.contact-link:hover .fa-envelope { color: #dd5347; }
+.contact-link:hover .fa-phone { color: #1295F3; }
+.contact-link:hover .fa-whatsapp { color: #25D366; }
+
+/* Se o fundo do link muda no hover, talvez os ícones precisem ser brancos */
+.contact-link:hover i {
+    color: #fff;
+}
+
+
+.nr1-section {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    border-left: 5px solid #c83793; /* Destaque Rosa/Magenta */
+}
+
+.nr1-section h2 {
+    font-size: 1.4em;
+    color: #3A1C71;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.nr1-section p {
+    font-size: 0.9em;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.nr1-section .call-to-action {
+    font-weight: 600;
+    color: #D76D77; /* Um tom de rosa/coral */
+    text-align: center;
+    font-size: 1em;
+}
+
+.nr1-section .hashtags {
+    font-size: 0.85em;
+    color: #6a0dad;
+    text-align: right;
+    font-style: italic;
+}
+
+.card-footer {
+    background-color: #333;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    .card {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .card-header {
+        padding: 20px 15px;
+    }
+    .profile-pic {
+        width: 120px;
+        height: 120px;
+    }
+    .card-body {
+        padding: 20px;
+    }
+    .card-body h1 {
+        font-size: 1.8em;
+    }
+    .card-body .title {
+        font-size: 1em;
+    }
+    .contact-info {
+        align-items: stretch; /* Faz os links ocuparem a largura total */
+    }
+}
